@@ -1,0 +1,80 @@
+body {
+	margin: 0;
+	padding: 50px 0 0 0;
+	background-color: #121212;
+}
+h1, h3 {
+	font-family: 'RocknRoll One', sans-serif;
+	text-align: center;
+}
+label, input, button {
+	font-family: 'Open Sans', sans-serif;
+}
+body div#wrapper {
+	margin: 0 auto;
+	display: block;
+	padding: 30px 24px;
+	background-color: #1e1e1e;
+	width: fit-content;
+	border-radius: 5px;
+}
+div#wrapper label {
+	color: #e1e1e1;
+	margin-bottom: 9px;
+	display: block;
+}
+div#wrapper input {
+	border-radius: 3px;
+	letter-spacing: 1px;
+	outline: none;
+	border: 1px solid #2c2c2c;
+	background-color: #2c2c2c;
+	display: block;
+	padding: 8px 12px;
+	color: #e1e1e1;
+	margin-bottom: 16px;
+	box-sizing: border-box;
+	width: 100%;
+}
+div#wrapper input:focus {
+	border-radius: 3px 3px 0 0;
+	border-bottom: 1px solid #e1e1e1;
+}
+h1 {
+	margin: 0 0 5px 0;
+	color: #92cbf7;
+}
+h3 {
+	margin: 0 0 30px 0;
+	color: #f290b1;
+}
+button {
+	display: block;
+	letter-spacing: 1px;
+	padding: 8px 12px;
+	cursor: pointer;
+	border-radius: 500px;
+	border: 0;
+	outline: 0;
+	font-weight: 700;
+}
+button:disabled {
+	cursor: default !important;
+	background-color: #3c3c3c !important;
+	color: #727272 !important;
+}
+button#calc {
+	background-color: #92cbf7;
+	margin: 30px auto 10px;
+}
+button#reset {
+	background-color: #f290b1;
+	margin: 0 auto;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type=number] {
+	-moz-appearance: textfield;
+}
