@@ -30,11 +30,11 @@ $(document).ready(function() {
 
 	$('#calc').click(function() {
 		if(!$cm.val()) {
-			new CalculateHeight();
+			CalculateHeight();
 		} else if(!$kg.val()) {
-			new CalculateWeight();
+			CalculateWeight();
 		} else {
-			new CalculateBMI();
+			CalculateBMI();
 		}
 		UpdateButtons();
 	});
@@ -67,7 +67,6 @@ $(document).ready(function() {
 
 		console.log("Height: " + result);
 		$cm.val(parseFloat(result.toFixed(1)));
-		$(this).focus();
 	}
 
 	function CalculateWeight() {
@@ -77,7 +76,6 @@ $(document).ready(function() {
 
 		console.log("Weight: " + result);
 		$kg.val(parseFloat(result.toFixed(1)));
-		$(this).focus();
 	}
 
 	function CalculateBMI() {
@@ -87,6 +85,5 @@ $(document).ready(function() {
 
 		console.log("BMI: " + result);
 		$bmi.val(parseFloat(result.toFixed(1)));
-		$(this).focus();
 	}
 });
